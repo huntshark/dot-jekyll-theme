@@ -1,0 +1,46 @@
+# website setting
+title: '疯狂的胖酒'
+description: 'stay hungry, stay foolish'
+keyword: 'just, justdot, just do it, full stack, javascript, vuejs, nodejs'
+url: 'http://justdot.me'
+
+# mime
+author: justdot
+belief: '疯狂的胖酒，全栈开发者 简单而又快乐的码农 do._.ob'
+
+# website license
+build_date: 2017
+
+# the subpath of your site, e.g. /blog
+baseurl: ''
+permalink: /:year/:month/:day/:title.html
+
+# conversion & build setting
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# # paginate setting
+# paginate: 1
+# paginate_path: "page:num"
+
+# pagination setting(paginate-v2)
+pagination:
+  enabled: true
+
+  limit: 0
+  per_page: 5
+
+  permalink: '/page/:num/'
+
+  sort_field: 'date'
+  sort_reverse: true
+
+  trail: 
+    before: 2
+    after: 2
+
+# plugins
+# plugins: [jekyll-paginate]
+plugins: [jekyll-paginate-v2]
