@@ -21,6 +21,14 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - CHANGELOG.md
+  - README.md
+  - .gitignore
+
 # # paginate setting
 # paginate: 1
 # paginate_path: "page:num"
@@ -43,4 +51,5 @@ pagination:
 
 # plugins
 # plugins: [jekyll-paginate]
-plugins: [jekyll-paginate-v2]
+plugins:
+  - jekyll-paginate-v2
