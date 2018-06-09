@@ -219,6 +219,7 @@ DEPENDENCIES
   github-pages (~> 168)
   jekyll (~> 3.6.2)
   jekyll-feed (~> 0.6)
+  jekyll-github-metadata (~> 2.9.3)
   jekyll-paginate-v2 (~> 1.9)
   minima (~> 2.0)
   tzinfo-data

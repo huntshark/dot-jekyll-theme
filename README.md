@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-[疯狂的胖酒](http://justdot.me)
+[胖酒小栈](http://justdot.me)
 
 ## 快速开始
 
@@ -12,13 +12,21 @@
 
 ## 版本规划
 
-v0.1.2
+v0.0.3
 
-* 新增404页面
-* 新增关于页面
-* 新增headrom等方便的功能
-* 调整页面结构样式
-* 使用foundation来适配不同屏幕尺寸
+* 增加 `top` 按钮
+* 增加 `search` 搜索框
+* 增加 `comment` 评论
+* 优化体验，部分页面样式与结构
+* 更新说明文档
+
+## 项目依赖
+
+* 导航: [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2/)
+* 工具: [jQuery](https://jquery.com/)
+* 响应式框架: [Bootstrap](https://getbootstrap.com/docs/3.3/getting-started/)
+* 字体图标: [Font Awesome](http://fontawesome.dashgame.com/)
+* 词法高亮: [Prism](https://prismjs.com/index.html)
 
 ## License
 

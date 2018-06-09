@@ -1,0 +1,83 @@
+---
+layout: book
+title: 万卷书
+motto: Live and learn
+translate: 活到老，学到老
+---
+
+<section id="articlebook" class="container article-books">
+    <div class="section-container article-books-container">
+      <div class="article-books-container-inner">
+        {% assign books = site.data.books | reverse %}
+  
+        {% for book in books %}
+          <div class="dot-book-card">
+            <header>
+              <div class="book-name">
+                <span>{{ book.name }}</span>
+
+                {% for star in (1..book.star) %}
+                  <span class="fa fa-star"></span>
+                {% endfor %}
+  
+                {% if book.isHalf %}
+                  <span class="fa fa-star-half-o"></span>
+                {% endif %}
+              </div>
+            </header>
+
+            <section>
+                {% if book.series %}
+                <ul class="dot-book-series">
+                  {% for serie in book.series %}
+                    {% if serie.status == 1 %}
+                      <li class="dot-book-serie active">
+                        {% if serie.part %}
+                          <span class="serie-part">{{ serie.part }}: </span>
+                        {% else %}
+                          <span class="serie-part">{{ serie.part }}</span>
+                        {% endif %}
+                        <span class="serie-name">{{ serie.name }}</span>
+                        <span class="serie-bracket">【</span>
+                        <span class="serie-status">阅读中...</span>
+                        <span class="serie-bracket">】</span>
+                      </li>
+                    {% elsif serie.status == 2 %}
+                      <li class="dot-book-serie complete">
+                        {% if serie.part %}
+                          <span class="serie-part">{{ serie.part }}: </span>
+                        {% else %}
+                          <span class="serie-part">{{ serie.part }}</span>
+                        {% endif %}
+                        <span class="serie-name">{{ serie.name }}</span>
+                        <span class="serie-bracket">【</span>
+                        <span class="serie-redate">{{ serie.readate | date:"%Y-%m-%d" }}</span>
+                        <span class="serie-status">{{ serie.type }}</span>
+                        <span class="serie-bracket">】</span>
+                      </li>
+                    {% else %}
+                      <li class="dot-book-serie prepare">
+                        {% if serie.part %}
+                          <span class="serie-part">{{ serie.part }}: </span>
+                        {% else %}
+                          <span class="serie-part">{{ serie.part }}</span>
+                        {% endif %}
+                        <span class="serie-name">{{ serie.name }}</span>
+                        <span class="serie-bracket">【</span>
+                        <span class="serie-status">计划中...</span>
+                        <span class="serie-bracket">】</span>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </section>
+
+            <footer>
+
+            </footer>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

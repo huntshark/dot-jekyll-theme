@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include meta.html %}
+    {% include link.html %}
+    <link rel="stylesheet" media="all" href="{{site.url}}/assets/css/article.css">
+  </head>
+  <body>
+    <div class="dot-page dot-article-page">
+      {% include navigator.html %}
+      {% include banner.html %}
+
+      <main class="page-container dot-article-container">
+        <section id="article" class="container article">
+          <div class="dot-markdown">
+            {{ content }}
+          </div>
+        </section>
+      </main>
+    </div>
+
+    {% include script.html %}
+  </body>
+</html>

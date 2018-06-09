@@ -1,0 +1,10 @@
+
+- cate: Linux/Unix
+  sites:
+    - name: Linux 命令大全
+      url: http://man.linuxde.net/
+
+- cate: ORM
+  sites:
+    - name: Sequelize
+      url: http://docs.sequelizejs.com/

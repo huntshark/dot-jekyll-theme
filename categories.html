@@ -1,0 +1,32 @@
+---
+layout: category
+title: 分类
+motto: Anything is possible
+translate: 一切皆有可能
+---
+
+<section id="articlecate" class="container article-categories">
+  <div class="section-container article-categories-container">
+    <div class="article-categories-container-inner">
+      {% assign sorted_categories = site.categories | sort %}
+
+      {% for category in sorted_categories %}
+        <div class="article-cate">
+          <div class="cate-name">
+            <span>{{ category | first }}</span>
+            <span>【{{ category | last | size }}】</span>
+          </div>
+
+          <ol class="cate-articles">
+            {% for post in category.last %}
+              <li class="article">
+                <span>{{ post.date | date:"%Y-%m-%d" }}</span>
+                <a href="{{site.url}}{{post.url}}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

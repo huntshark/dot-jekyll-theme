@@ -1,12 +1,18 @@
-# website setting
-title: '疯狂的胖酒'
+#  website setting
+title: '胖酒小栈'
+# 衡量代码质量的唯一有效标准: WTF/min
+# It is better to be clear than to be clever.
+# 做的清晰比做的聪明更好
+motto: 'It is better to be clear than to be clever'
 description: 'stay hungry, stay foolish'
-keyword: 'just, justdot, just do it, full stack, javascript, vuejs, nodejs'
+keywords: '胖酒, 胖酒小栈, just, dot, justdot, justdotx, full stack'
+timezone: Asia/Shanghai
+encoding: "utf-8"
 url: 'http://justdot.me'
 
 # mime
 author: justdot
-belief: '疯狂的胖酒，全栈开发者 简单而又快乐的码农 do._.ob'
+belief: '机智的胖酒，全栈开发者 简单快乐的小码农 do._.ob'
 
 # website license
 build_date: 2017
@@ -15,11 +21,15 @@ build_date: 2017
 baseurl: ''
 permalink: /:year/:month/:day/:title.html
 
+# github repo setting
+# https://help.github.com/articles/repository-metadata-on-github-pages/
+repository: sTdobTs/dot-jekyll-theme
+
 # conversion & build setting
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM
+    input: GFM
 
 exclude:
   - docs
@@ -30,7 +40,7 @@ exclude:
   - CHANGELOG.md
   - .gitignore
 
-# # paginate setting
+# # paginate setting(paginate)
 # paginate: 1
 # paginate_path: "page:num"
 
@@ -54,3 +64,4 @@ pagination:
 plugins:
   # - jekyll-paginate
   - jekyll-paginate-v2
+  - jekyll-github-metadata

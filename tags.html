@@ -1,0 +1,32 @@
+---
+layout: tag
+title: 标签
+motto: Where there is a will, there is a way
+translate: 有志者, 事竟成
+---
+
+<section id="articletag" class="container article-tags">
+  <div class="section-container article-tags-container">
+    <div class="article-tags-container-inner">
+      {% assign sorted_tags = site.tags | sort %}
+
+      {% for tag in sorted_tags %}
+        <div class="article-tag">
+          <div class="tag-name">
+            <span>{{ tag | first }}</span>
+            <span>【{{ tag | last | size }}】</span>
+          </div>
+
+          <ol class="tag-articles">
+            {% for post in tag.last %}
+              <li class="article">
+                <span>{{ post.date | date:"%Y-%m-%d" }}</span>
+                <a href="{{site.url}}{{post.url}}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
