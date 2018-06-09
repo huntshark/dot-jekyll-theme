@@ -1,6 +1,6 @@
 # dot-jekyll-theme
 
-基于jekyll v3的主题
+基于 jekyll v3 主题
 
 ## 在线预览
 
