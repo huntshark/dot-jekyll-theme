@@ -1,0 +1,74 @@
+- name: 明朝那些事儿
+  star: 4
+  isHalf: true
+  cate: 历史
+  publisher: 浙江人民出版社, 第1版
+  language: 简体中文
+  description: ''
+  comment: ''
+  series:
+    - name: 洪武大帝
+      part: 第一部
+      readate: 2018.03
+      status: 2
+      type: 泛读
+
+    - name: 万国来潮
+      part: 第二部
+      readate: 2018.04
+      status: 2
+      type: 泛读
+
+    - name: 妖孽宫廷
+      part: 第三部
+      readate: 2018.04
+      status: 2
+      type: 泛读
+
+    - name: 粉饰太平
+      part: 第四部
+      readate: 2018.05
+      status: 2
+      type: 泛读
+
+    - name: 帝国飘摇
+      part: 第五部
+      readate: 2018.06
+      status: 2
+      type: 泛读
+
+    - name: 日暮西山
+      part: 第六部
+      status: 1
+      type: 泛读
+
+    - name: 大结局
+      part: 第七部
+      status: 0
+      type: 泛读
+
+- name: 第一本 Docker 书
+  star: 3
+  isHalf: false
+  cate: Docker
+  publisher: 人民邮电出版社, 第2版
+  language: 简体中文
+  description: ''
+  comment: ''
+  series:
+    - name: 第一本 Docker 书
+      status: 1
+      type: 泛读
+
+- name: 大话数据结构
+  star: 4
+  isHalf: false
+  cate: 数据结构
+  publisher: 清华大学出版社, 第1版
+  language: 简体中文
+  description: ''
+  comment: ''
+  series:
+    - name: 大话数据结构
+      status: 1
+      type: 精读

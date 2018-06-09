@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem 'jekyll-paginate-v2', '~> 1.9'
   gem 'github-pages', '~> 168'
+  gem 'jekyll-github-metadata', '~> 2.9.3'
   # gem "jekyll-paginate"
 end
 

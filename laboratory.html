@@ -1,0 +1,36 @@
+---
+layout: laboratory
+title: 实验室
+motto: Practice makes perfect
+translate: 熟能生巧
+---
+
+<section id="articlelab" class="container article-laboratory">
+  <div class="section-container article-laboratory-container">
+    <div class="article-laboratory-container-inner">
+      <div class="laboratory-repo">
+        {% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
+
+        {% for repo in repos %}
+          <a href="{{repo.html_url}}" target="_blank" class="dot-repo-card">
+            <div class="dot-repo-name">
+              <h3 class="dot-repo-title">{{ repo.name }}</h3>
+            </div>
+  
+            <div class="dot-repo-caption">
+              <div class="dot-repo-description">
+                <p>{{ repo.description }}</p>
+              </div>
+  
+              <div class="dot-repo-meta">
+                <span class="fa fa-star"> {{ repo.stargazers_count }}</span>
+                <span class="fa fa-code-fork"> {{ repo.forks_count }}</span>
+                <span class="fa fa-clock-o"> {{ repo.updated_at | date: '%Y-%m-%d' }}</span>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

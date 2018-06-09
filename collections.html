@@ -1,0 +1,31 @@
+---
+layout: collection
+title: 拾遗
+motto: The wise man listens to all sides
+translate: 海乃百川, 有容乃大
+---
+
+<section id="articlehistory" class="container article-collections">
+    <div class="section-container article-collections-container">
+      <div class="article-collections-container-inner">
+          {% assign collections = site.data.collections | reverse %}
+
+          {% for collection in collections %}
+            <div class="article-collection">
+              <div class="collection-name">
+                <span>{{ collection.cate }}</span>
+                <span>【{{ collection.sites | size }}】</span>
+              </div>
+
+              <ol class="collection-sites">
+                {% for website in collection.sites %}
+                  <li class="collection-website">
+                    <a href="{{website.url}}">{{ website.name }}</a>
+                  </li>
+                {% endfor %}
+              </ol>
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+</section>

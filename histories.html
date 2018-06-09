@@ -1,0 +1,36 @@
+---
+layout: history
+title: 轨迹
+motto: Constant dropping wears the stone
+translate: 水滴石穿
+---
+
+<section id="articlehistory" class="container article-histories">
+    <div class="section-container article-histories-container">
+      <div class="article-histories-container-inner">
+        <ul class="dot-history-timeline">
+            {% assign histories = site.data.histories | reverse %}
+  
+            {% for history in histories %}
+              <li class="history-timeline-block">
+                <div class="timeline-dot">
+                  <div class="timeline-node">
+
+                  </div>
+                </div>
+
+                <div class="timeline-content">
+                  <h3>{{ history.title }}</h3>
+
+                  {% for content in history.content %}
+                    <p>{{ content }}</p>
+                  {% endfor %}
+
+                  <span class="timeline-date">{{ history.date }}</span>
+                </div>
+              </li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+</section>
