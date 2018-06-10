@@ -39,6 +39,8 @@ exclude:
   - README.md
   - CHANGELOG.md
   - .gitignore
+  - build.sh
+  - startup.sh
 
 # # paginate setting(paginate)
 # paginate: 1
