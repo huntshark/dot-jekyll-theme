@@ -191,7 +191,7 @@ ol {
   min-height: 48px;
   padding: 40px 0;
   border-top: 1px solid #dcdcdc;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #656565;
   text-align: center;
 }
@@ -209,6 +209,11 @@ ol {
 .dot-footer section:first-child a:first-child {
   display: block;
   margin-bottom: 2px;
+}
+@media (min-width: 768px) {
+  .dot-footer {
+    font-size: 0.875rem;
+  }
 }
 
 /* website banner */
